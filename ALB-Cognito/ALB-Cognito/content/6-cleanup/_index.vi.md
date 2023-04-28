@@ -12,7 +12,7 @@ Chúng ta sẽ tiến hành các bước sau để xóa các tài nguyên chúng
 
 1. Truy cập [giao diện quản trị dịch vụ EC2](https://console.aws.amazon.com/ec2/v2/home)
   + Click **Instances**.
-  + Click chọn cả 2 instance **Public Linux Instance** và **Private Windows Instance**. 
+  + Click chọn instance **demo-cognito**. 
   + Click **Instance state**.
   + Click **Terminate instance**, sau đó click **Terminate** để xác nhận.
 
