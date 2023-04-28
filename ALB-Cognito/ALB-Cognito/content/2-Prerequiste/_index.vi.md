@@ -13,7 +13,11 @@ Trong bước này, chúng ta sẽ chuẩn bị 1 số dịch vụ để có th�
 {{% /notice %}}
 
 ### Nội dung
-  - [Chuẩn bị VPC và EC2 Instance](2.1-createec2/)
-  - [Tạo IAM Role](2.2-createiamrole/)
+  1. [Tạo domain](2.1-domain/)
+  2. [Đăng kí SSL certificate](2.2-ssl/)
+  3. [Tạo VPC](2.3-vpc/)
+  4. [Tạo Security group](2.4-sg/)
+  5. [Tạo EC2](2.5-ec2/)
+  6. [Tạo website đơn giản trên EC2](2.6-website/)
 
   

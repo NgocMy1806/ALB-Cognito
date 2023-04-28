@@ -10,7 +10,7 @@ chapter : false
 
  Trong bài lab này, bạn sẽ thực hành tạo 1 website đơn giản có chức năng xác thực (đăng kí, đăng nhập, đăng xuất) bằng Application Load Balancer và Amazon Cognito.
  Ngoài ra, trong quá trình làm lab, bạn cũng sẽ được giới thiệu cách để chuyển nameserver từ domain provider về Route 53, cũng như cách sửa dụng AWS Certificate Manager để request SSL certificate cho domain của bạn.
- Rất mong bài lab này sẽ giúp ích cho bạn!
+ Rất mong bài lab này sẽ giúp ích cho bạn trong "hành trình lên mây"!
 
 ![ConnectPrivate](/images/arc-log.png) 
 

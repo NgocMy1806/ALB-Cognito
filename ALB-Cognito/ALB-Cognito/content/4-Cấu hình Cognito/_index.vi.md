@@ -1,23 +1,18 @@
 ---
-title : "Tạo ALB"
+title : "Cấu hình Cognito"
 date :  "`r Sys.Date()`" 
-weight : 3
+weight : 4
 chapter : false
-pre : " <b> 3. </b> "
+pre : " <b> 4. </b> "
 ---
 
 
-Ở bước này, chúng ta sẽ
+Ở bước này, chúng ta sẽ cấu hình user pool, thử tạo tài khoản trên cognito, sau đó tiến hành cấu hình ALB authentication rule trỏ đến Cognito.
 
-![S3](/images/4.s3/001-s3.png)
-
-Trong phần này chúng ta sẽ tiến hành tạo S3 bucket và thực hiện cấu hình lưu trữ các session logs để xem được chi tiết các câu lệnh được sử dụng trong session.
-
-![port-fwd](/images/arc-log.png) 
 
 ### Nội dung:
 
-  - [Cập nhật IAM Role](./4.1-updateiamrole/)
-  - [Tạo **S3 Bucket**](./4.2-creates3bucket/)
-  - [Tạo S3 Gateway endpoint](./4.3-creategwes3)
-  - [Cấu hình **Session logs**](./4.4-configsessionlogs/)
+  1. [Tạo user pool](./4.1-userpool/)
+  2. [Thử tạo tài khoản trên Cognito](./4.2-signup/)
+  3. [Cấu hình ALB authentication rule](./4.3-albrule)
+  
