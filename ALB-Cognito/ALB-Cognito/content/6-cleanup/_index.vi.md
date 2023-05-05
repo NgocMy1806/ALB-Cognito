@@ -20,7 +20,7 @@ Chúng ta sẽ tiến hành các bước sau để xóa các tài nguyên chúng
 
 - Truy cập **EC2 Management **Console**
 - Trên thanh điều hướng bên trái, chọn **Target Groups**
-- Chọn **Target Group** liên quan *tới bài lab.
+- Chọn **Target Group** liên quan tới bài lab.
 - Click **Actions**.
 - Click **Delete**.
 - Click **Yes, delete**

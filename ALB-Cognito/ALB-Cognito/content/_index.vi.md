@@ -1,5 +1,5 @@
 ---
-title : "Session Management"
+title : "ALB & Amazon Cognito"
 date :  "`r Sys.Date()`" 
 weight : 1 
 chapter : false

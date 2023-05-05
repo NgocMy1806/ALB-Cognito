@@ -1,21 +1,18 @@
 ---
-title : "Introduction"
+title : "Introduce"
 date :  "`r Sys.Date()`" 
 weight : 1 
 chapter : false
 pre : " <b> 1. </b> "
 ---
-**Session Manager** is a function within the AWS System Manager service, SSM provides verifiable and secure version management without opening incoming ports, without Bastion Host or SSH key management. Session Manager also makes it easy to comply with corporate policies that require controlled access to instances, strict security practices, and fully auditable logs with instance access details, while still providing end-users with one-click cross-platform access to your managed instances.
+In this lab, you will practice creating a simple website with authentication functions (registration, login, logout) using Application Load Balancer (ALB) and Amazon Cognito.
+This website is in an EC2 instance behind ALB.
+When user accesses the public page (which anyone can view), ALB will direct them straight to EC2.
+If user accesses a private page (which can only be viewed by logged-in users), ALB will direct them to Cognito. After the user finishes logging in on Cognito, ALB will direct them to the requested resource on EC2.
 
-By using Session Manager, you get the following advantages that traditional methods do not have:
+#### Application Load Balancer (ALB)
+ALB is a service provided by Amazon Web Services (AWS) that offers load balancing and traffic routing solutions for applications running on multiple servers.
 
-- No need to open port 22 for SSH protocol, so it is more secure.
-- Can be configured so that the connection does not need to go outside the internet, so it is more secure.
-- No need to manage the server's private key to connect to SSH.
-- Centralized management of users using AWS IAM.
-- Access to the server easily and simply with one click.
-- Faster access time than traditional methods like SSH
-- Support many different operating systems such as Linux, Windows, MacOS
-- Log the connection sessions and commands executed while connecting to the server.
-  
-With the above advantages, you can use Session Manager instead of using Bastion host technique to save us time and money when managing Bastion server. 
+#### Amazon Cognito
+Amazon Cognito is a login and authentication management service for web and mobile applications. It enables developers to authenticate and authorize users through social Identity Providers (IdP) such as Facebook, Google, and Amazon, or through custom user accounts. Cognito provides user management, authorization, and activity tracking features, helping to reduce development effort and improve security for applications.
+![ConnectPrivate](/images/arc-log.png) 

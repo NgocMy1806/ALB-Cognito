@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 4.1. </b> "
 ---
 
-1. Truy cập vào [giao diện quản trị của dịch vụ EC2](https://console.aws.amazon.com/cognito/v2/home).
+1. Truy cập vào [giao diện quản trị của dịch vụ Amazon Cognito](https://console.aws.amazon.com/cognito/v2/home).
   + Click chọn **User pools**.
   + Click chọn **Create user pools**.
 ![Cognito](/images/4.cognito/001-userpool.png)
@@ -51,13 +51,13 @@ pre : " <b> 4.1. </b> "
   + Tại mục **Client secret**, chọn **Generate a client secret**.
   + Tại mục **Allowed callback URLs**, nhập **domain/oauth2/idpresponse**.
   {{% notice info %}}
-  Thay domain của bạn vào chữ `domain` trong URL phía trên
+  Thay domain của bạn vào chữ "domain" trong URL phía trên
   {{% /notice %}}
 ![Cognito](/images/4.cognito/008-userpool.png)
   + Mở rộng phần **Advanced app client settings**
   + Kéo xuống đến mục **Allowed sign-out URLs**, nhập **domain/demo-cognito/logged_out.html**
   {{% notice info %}}
-  Thay domain của bạn vào chữ `domain` trong URL phía trên
+  Thay domain của bạn vào chữ "domain" trong URL phía trên
   {{% /notice %}}
   + Click **Next**.
 ![Cognito](/images/4.cognito/009-userpool.png)

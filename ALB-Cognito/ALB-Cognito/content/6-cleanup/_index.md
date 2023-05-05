@@ -1,83 +1,78 @@
 +++
-title = "Clean up resources"
-date = 2022
+title = "Clean up resources "
+date = 2021
 weight = 6
 chapter = false
 pre = "<b>6. </b>"
 +++
 
-We will take the following steps to delete the resources we created in this exercise.
+We will follow the following steps to delete the resources we created in this lab:
 
-#### Delete EC2 instance
+### Delete Load Balancer:
 
-1. Go to [EC2 service management console](https://console.aws.amazon.com/ec2/v2/home)
-   + Click **Instances**.
-   + Select both **Public Linux Instance** and **Private Windows Instance** instances.
-   + Click **Instance state**.
-   + Click **Terminate instance**, then click **Terminate** to confirm.
+- Access **EC2 Management Console**
+- On the left navigation pane, select **Load Balancers**
+- Select **Load Balancer** related to the lab.
+- Click **Actions**.
+- Click **Delete**.
 
-2. Go to [IAM service management console](https://console.aws.amazon.com/iamv2/home#/home)
-   + Click **Roles**.
-   + In the search box, enter **SSM**.
-   + Click to select **SSM-Role**.
-   + Click **Delete**, then enter the role name **SSM-Role** and click **Delete** to delete the role.
+### Delete Target Group:
 
-![Clean](/images/6.clean/001-clean.png)
+- Access **EC2 Management **Console**
+- On the left navigation pane, select **Target Groups**
+- Select **Target Group** related to the lab.
+- CLick **Actions**.
+- Select **Delete**.
+- Click **Yes, delete**
 
-3. Click **Users**.
-   + Click on user **Portfwd**.
-   + Click **Delete**, then enter the user name **Portfwd** and click **Delete** to delete the user.
+### Delete instance
 
-#### Delete S3 bucket
+1. Access **EC2**
+2. Click **Instances**
+3. Select instance related to the lab.
+4. Click  **Instance state**
+5. Click  **Terminate instance**
 
-1. Access [System Manager - Session Manager service management console](https://console.aws.amazon.com/systems-manager/session-manager).
-   + Click the **Preferences** tab.
-   + Click **Edit**.
-   + Scroll down.
-   + In the section **S3 logging**.
-   + Uncheck **Enable** to disable logging.
-   + Scroll down.
-   + Click **Save**.
+### Delete Security group
 
-2. Go to [S3 service management console](https://s3.console.aws.amazon.com/s3/home)
-   + Click on the S3 bucket we created for this lab. (Example: lab-fcj-bucket-0001 )
-   + Click **Empty**.
-   + Enter **permanently delete**, then click **Empty** to proceed to delete the object in the bucket.
-   + Click **Exit**.
+1. Access **EC2**
+2. Click **Security Group**
+3. Select security groups related to the lab.
+4. Click **Actions**
+5. Click **Delete security group**
 
-3. After deleting all objects in the bucket, click **Delete**
+### Delete Keypair
 
-![Clean](/images/6.clean/002-clean.png)
+1. Access **EC2**
+2. Click **Key Pairs**
+3. Click **Actions**
+4. Click **Delete**
 
-4. Enter the name of the S3 bucket, then click **Delete bucket** to proceed with deleting the S3 bucket.
+#### Delete User pool
 
-![Clean](/images/6.clean/003-clean.png)
-
-#### Delete VPC Endpoints
-
-1. Go to [VPC service management console](https://console.aws.amazon.com/vpc/home)
-   + Click **Endpoints**.
-   + Select the 4 endpoints we created for the lab including **SSM**, **SSMMESSAGES**, **EC2MESSAGES**, **S3GW**.
-   + Click **Actions**.
-   + Click **Delete VPC endpoints**.
-
-![Clean](/images/6.clean/004-clean.png)
-
-2. In the confirm box, enter **delete**.
-   + Click **Delete** to proceed with deleting endpoints.
-
-3. Click the refresh icon, check that all endpoints have been deleted before proceeding to the next step.
-
-![Clean](/images/6.clean/005-clean.png)
+1. Access Cognito
+2. Select User pool
+3. Click **Delete**
 
 #### Delete VPC
 
-1. Go to [VPC service management console](https://console.aws.amazon.com/vpc/home)
-   + Click **Your VPCs**.
-   + Click on **Lab VPC**.
-   + Click **Actions**.
-   + Click **Delete VPC**.
+1. Access **VPC**
+2. Select **Your VPCs**
+3. Select the VPCs related to the lab
+4. Click **Actions**
+5. Click **Delete VPC**
 
-2. In the confirm box, enter **delete** to confirm, click **Delete** to delete **Lab VPC** and related resources.
 
-![Clean](/images/6.clean/006-clean.png)
+#### Delete Certificates 
+
+1. Access **ACM**
+2. Click **List certificates**
+3. Select the VPCs related to the lab
+4. Click **Delete**
+
+#### Delete Hosted zone 
+
+1. Access **Route 53** 
+2. Select **Hosted zone**
+3. Select the Hosted zone related to the lab
+4. Click **Delete**

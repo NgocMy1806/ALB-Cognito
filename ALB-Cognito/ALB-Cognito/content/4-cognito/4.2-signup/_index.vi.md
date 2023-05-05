@@ -17,7 +17,7 @@ pre : " <b> 4.2. </b> "
 + Click vào app client **demo-cognito**
   ![Cognito](/images/4.cognito/013-testlogin.png)
 
-+ Kéo xuống đến mục ****Hosted UI****
++ Kéo xuống đến mục **Hosted UI**
 + Click vào **View hosted UI**
   ![Cognito](/images/4.cognito/014-testlogin.png)
 Lúc này, màn hình đăng kí tài khoản của Cognito sẽ hiển thị.

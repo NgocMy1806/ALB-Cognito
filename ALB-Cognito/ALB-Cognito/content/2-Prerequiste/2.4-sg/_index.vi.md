@@ -53,7 +53,4 @@ Trong bước này chúng ta sẽ tiến hành tạo các security groups cho AL
 5. Giữ nguyên **Outbound rule**, kéo chuột xuống phía dưới.
   + Click **Create security group**.
 
-
-
-
     Như vậy chúng ta đã tạo xong các security group cần thiết cho các EC2 instance và ALB.
